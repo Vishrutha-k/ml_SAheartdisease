@@ -75,7 +75,6 @@ def logistic_regression(X,y):
     model = lm.logistic.LogisticRegression()
     model = model.fit(X,y)
     
-    # Classify wine as White/Red (0/1) and assess probabilities
     y_est = model.predict(X)
     y_est_white_prob = model.predict_proba(X)[:, 0] 
     
